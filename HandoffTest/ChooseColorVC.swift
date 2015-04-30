@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ChooseColorVC.swift
 //  HandoffTest
 //
 //  Created by Vojta Stavik on 30/04/15.

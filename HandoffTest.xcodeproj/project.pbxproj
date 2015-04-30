@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A588AB5C1AF2355200EAE3BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A588AB5B1AF2355200EAE3BF /* AppDelegate.swift */; };
-		A588AB5E1AF2355300EAE3BF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A588AB5D1AF2355300EAE3BF /* FirstViewController.swift */; };
-		A588AB601AF2355300EAE3BF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A588AB5F1AF2355300EAE3BF /* SecondViewController.swift */; };
+		A588AB5E1AF2355300EAE3BF /* ChooseColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A588AB5D1AF2355300EAE3BF /* ChooseColorVC.swift */; };
+		A588AB601AF2355300EAE3BF /* ChooseSizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A588AB5F1AF2355300EAE3BF /* ChooseSizeVC.swift */; };
 		A588AB631AF2355300EAE3BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A588AB611AF2355300EAE3BF /* Main.storyboard */; };
 		A588AB651AF2355300EAE3BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A588AB641AF2355300EAE3BF /* Images.xcassets */; };
 		A588AB681AF2355300EAE3BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A588AB661AF2355300EAE3BF /* LaunchScreen.xib */; };
@@ -68,8 +68,8 @@
 		A588AB561AF2355200EAE3BF /* HandoffTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandoffTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A588AB5A1AF2355200EAE3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A588AB5B1AF2355200EAE3BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A588AB5D1AF2355300EAE3BF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A588AB5F1AF2355300EAE3BF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A588AB5D1AF2355300EAE3BF /* ChooseColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorVC.swift; sourceTree = "<group>"; };
+		A588AB5F1AF2355300EAE3BF /* ChooseSizeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSizeVC.swift; sourceTree = "<group>"; };
 		A588AB621AF2355300EAE3BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A588AB641AF2355300EAE3BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A588AB671AF2355300EAE3BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -139,15 +139,15 @@
 		A588AB581AF2355200EAE3BF /* HandoffTest */ = {
 			isa = PBXGroup;
 			children = (
+				A588AB811AF23AFA00EAE3BF /* ActivityKeys.swift */,
 				A588AB5B1AF2355200EAE3BF /* AppDelegate.swift */,
-				A588AB5D1AF2355300EAE3BF /* FirstViewController.swift */,
-				A588AB5F1AF2355300EAE3BF /* SecondViewController.swift */,
+				A588AB5D1AF2355300EAE3BF /* ChooseColorVC.swift */,
+				A588AB5F1AF2355300EAE3BF /* ChooseSizeVC.swift */,
 				A588AB7D1AF23A7500EAE3BF /* MainTabBarController.swift */,
 				A588AB611AF2355300EAE3BF /* Main.storyboard */,
 				A588AB641AF2355300EAE3BF /* Images.xcassets */,
 				A588AB661AF2355300EAE3BF /* LaunchScreen.xib */,
 				A588AB591AF2355200EAE3BF /* Supporting Files */,
-				A588AB811AF23AFA00EAE3BF /* ActivityKeys.swift */,
 			);
 			path = HandoffTest;
 			sourceTree = "<group>";
@@ -378,11 +378,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A588AB601AF2355300EAE3BF /* SecondViewController.swift in Sources */,
+				A588AB601AF2355300EAE3BF /* ChooseSizeVC.swift in Sources */,
 				A588AB5C1AF2355200EAE3BF /* AppDelegate.swift in Sources */,
 				A588AB7E1AF23A7500EAE3BF /* MainTabBarController.swift in Sources */,
 				A588AB821AF23AFA00EAE3BF /* ActivityKeys.swift in Sources */,
-				A588AB5E1AF2355300EAE3BF /* FirstViewController.swift in Sources */,
+				A588AB5E1AF2355300EAE3BF /* ChooseColorVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +678,7 @@
 				A588AB791AF2355300EAE3BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A588AB7A1AF2355300EAE3BF /* Build configuration list for PBXNativeTarget "HandoffTestTests" */ = {
 			isa = XCConfigurationList;
@@ -686,6 +687,7 @@
 				A588AB7C1AF2355300EAE3BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A588ABA01AF2460400EAE3BF /* Build configuration list for PBXNativeTarget "HandoffTest WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -694,6 +696,7 @@
 				A588ABA21AF2460400EAE3BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A588ABA31AF2460400EAE3BF /* Build configuration list for PBXNativeTarget "HandoffTest WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -702,6 +705,7 @@
 				A588ABA51AF2460400EAE3BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

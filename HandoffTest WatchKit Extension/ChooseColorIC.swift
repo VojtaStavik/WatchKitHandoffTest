@@ -1,5 +1,5 @@
 //
-//  InterfaceController.swift
+//  ChooseColorIC.swift
 //  HandoffTest WatchKit Extension
 //
 //  Created by Vojta Stavik on 30/04/15.
