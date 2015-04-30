@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Choose ColorIC-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="ChooseColorIC" customModule="HandoffTest_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Choose color" textAlignment="center" id="862-M8-EPS"/>
+                        <button width="1" alignment="left" title="Red" id="WMh-wK-tmV">
+                            <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="button0Pressed" destination="AgC-eL-Hgc" id="wCW-Ik-4FK"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Green" id="jND-wr-CfA">
+                            <connections>
+                                <action selector="button1Pressed" destination="AgC-eL-Hgc" id="GTu-mf-sUu"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Orange" id="tiE-8p-bEH">
+                            <connections>
+                                <action selector="button2Pressed" destination="AgC-eL-Hgc" id="FW0-Dp-mKQ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button0" destination="WMh-wK-tmV" id="qSe-kl-mbJ"/>
+                        <outlet property="button1" destination="jND-wr-CfA" id="etf-0O-EXM"/>
+                        <outlet property="button2" destination="tiE-8p-bEH" id="VhO-c5-d4A"/>
+                        <segue destination="01m-DL-lBs" kind="relationship" relationship="nextPage" id="DjK-YR-3n5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="224" y="628"/>
+        </scene>
+        <!--Choose SizeIC-->
+        <scene sceneID="sOW-xm-hhy">
+            <objects>
+                <controller id="01m-DL-lBs" customClass="ChooseSizeIC" customModule="HandoffTest_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Choose size" id="wzj-95-cdw"/>
+                        <button width="1" alignment="left" title="Small" id="vte-Sy-Zaw">
+                            <connections>
+                                <action selector="button0Pressed" destination="01m-DL-lBs" id="F3S-TQ-kxE"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Regular" id="Pz9-cH-CME">
+                            <connections>
+                                <action selector="button1Pressed" destination="01m-DL-lBs" id="5Ce-PK-liU"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Huge" id="Ies-q8-n3T">
+                            <connections>
+                                <action selector="button2Pressed" destination="01m-DL-lBs" id="x8C-uH-M6s"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button0" destination="vte-Sy-Zaw" id="zyh-bn-ejR"/>
+                        <outlet property="button1" destination="Pz9-cH-CME" id="a1f-Ha-Eb6"/>
+                        <outlet property="button2" destination="Ies-q8-n3T" id="lfb-6O-J0h"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="502" y="628"/>
+        </scene>
+    </scenes>
+</document>
